@@ -12,12 +12,17 @@
 </head>
 <body>
     <div class="todo-list">
+        <form >
+        <div id="header" >
         <h1>Todo List</h1>
+        <div id="clear" onclick="clearcompleted()">Clear All Complete Task </div>
+        </div>
         <ul id="taskList"></ul>
         <div class="add-item">
           <input type="text" id="taskInput" placeholder="Add a new item">
           <button id="addTaskBtn">Add Item</button>
         </div>
+    </form>
       </div>
     <script src="script.js"></script>
 </body>

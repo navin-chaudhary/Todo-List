@@ -17,8 +17,25 @@ body {
   text-align: center;
   font-family: "Sevillana", cursive;
 }
-.checkbox{
-   
+#header{
+  display: flex;
+  justify-content: space-between;
+}
+#clear{
+  height: 30px;
+  width: 180px;
+  padding-top: 10px;
+  padding-left: 10px;
+  font-size: 15px;
+  color: white;
+  font-family: "Sevillana", cursive;
+  border-radius: 10px;
+  cursor: pointer;
+  background-color:#9b50d1;
+  margin-top: 20px;
+}
+#clear:hover {
+  background-color: #822dd0;
 }
 #taskList{
   padding: 0;

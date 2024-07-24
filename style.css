@@ -15,7 +15,7 @@ body {
   font-size: 24px;
   margin-bottom: 20px;
   text-align: center;
-  /* font-family: "Sevillana", cursive; */
+  font-family: "Oswald", sans-serif;
 }
 #header{
   display: flex;
@@ -119,10 +119,14 @@ li{
    }
    h1{
     font-size: 15px;
+    margin-top: 21px;
+    font-size: 25px;
+    font-weight: bold;
    }
    #clear{
   width: 150px;
   font-size: 13px;
-  
+  font-weight: bold;
    }
+   
 }

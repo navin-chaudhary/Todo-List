@@ -5,7 +5,6 @@ let form=document.querySelector('form');
 form.addEventListener('submit', () => {
     let input=document.querySelector("#taskInput")
     let taskinput = input.value.trim();
-    // if(todos.find(e=>e.input==taskinput)) return
     function addtodos() {
         if (taskinput !== '') {
             

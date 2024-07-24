@@ -15,7 +15,7 @@ body {
   font-size: 24px;
   margin-bottom: 20px;
   text-align: center;
-  font-family: "Sevillana", cursive;
+  /* font-family: "Sevillana", cursive; */
 }
 #header{
   display: flex;
@@ -28,7 +28,7 @@ body {
   padding-left: 10px;
   font-size: 15px;
   color: white;
-  font-family: "Sevillana", cursive;
+  /* font-family: "Sevillana", cursive; */
   border-radius: 10px;
   cursor: pointer;
   background-color:#9b50d1;

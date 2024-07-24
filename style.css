@@ -21,11 +21,11 @@ body {
 .checkbox{
   margin-left: 5px;
 }
-div{
+/* div{
   display: flex;
   align-items: center;
   gap: 4px;
-}
+} */
 #header{
   display: flex;
   justify-content: space-between;
@@ -57,6 +57,7 @@ li{
   font-family: "Bona Nova SC", serif;
   border-top: 1px solid rgb(54, 53, 53);
   padding: 10px;
+  font-size: 20px;
 
 }
 .add-item {

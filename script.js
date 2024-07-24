@@ -2,7 +2,8 @@ let todos = [];
 let button = document.querySelector("#addTaskBtn");
 let tasklist = document.querySelector("#taskList");
 let form=document.querySelector('form');
-form.addEventListener('submit', () => {
+form.addEventListener('submit', (e) => {
+    e.preventDefault()
     let input=document.querySelector("#taskInput")
     let taskinput = input.value.trim();
     function addtodos() {

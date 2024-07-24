@@ -9,6 +9,7 @@ body {
   background-color:white;
   box-shadow: 1px 1px 5px 5px rgba(0, 0, 255, .2);
   margin-top: 50px;
+  border-radius: 10px;
 }
 
 .todo-list h1 {
@@ -17,15 +18,22 @@ body {
   text-align: center;
   font-family: "Oswald", sans-serif;
 }
+.checkbox{
+  margin-left: 5px;
+}
+div{
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
 #header{
   display: flex;
   justify-content: space-between;
 }
 #clear{
-  height: 30px;
-  width: 180px;
-  padding-top: 10px;
-  padding-left: 10px;
+  height: 24px;
+  width: 161px;
+  padding: 10px;
   font-size: 15px;
   color: white;
   /* font-family: "Sevillana", cursive; */
@@ -44,8 +52,8 @@ li{
   display: flex;
   justify-content: space-between;
   list-style-type: none;
-  width: 470px;
-  margin:10px 10px;
+  width: 480px;
+  /* margin:10px 10px; */
   font-family: "Bona Nova SC", serif;
   border-top: 1px solid rgb(54, 53, 53);
   padding: 10px;
@@ -84,7 +92,7 @@ li{
      width: 450px;
    }
    li{
-    width:400px;
+    width:430px;
    }
 }
 @media only screen and (max-width:520px){
@@ -92,7 +100,7 @@ li{
      width: 400px;
    }
    li{
-    width:350px;
+    width:375px;
    }
 }
 @media only screen and (max-width:460px){
@@ -127,6 +135,7 @@ li{
   width: 150px;
   font-size: 13px;
   font-weight: bold;
+  padding-right: 5px;
    }
    
 }

@@ -79,3 +79,50 @@ li{
 .add-item button:hover {
   background-color: #822dd0;
 }
+@media only screen and (max-width:600px){
+   .todo-list{
+     width: 450px;
+   }
+   li{
+    width:400px;
+   }
+}
+@media only screen and (max-width:520px){
+   .todo-list{
+     width: 400px;
+   }
+   li{
+    width:350px;
+   }
+}
+@media only screen and (max-width:460px){
+   .todo-list{
+     width: auto;
+   }
+   li{
+    width:auto;
+   }
+   /* #taskInput{
+    width: auto;
+   } */
+}
+@media only screen and (max-width:365px){
+   .todo-list{
+     width: auto;
+     margin-top: 0px;
+   }
+   li{
+    width:auto;
+   }
+   #taskInput{
+    width:100px;
+   }
+   h1{
+    font-size: 15px;
+   }
+   #clear{
+  width: 150px;
+  font-size: 12px;
+  
+   }
+}

@@ -1,5 +1,6 @@
 body {
   font-family: Arial, sans-serif;
+  
 }
 
 .todo-list {
@@ -10,6 +11,8 @@ body {
   box-shadow: 1px 1px 5px 5px rgba(0, 0, 255, .2);
   margin-top: 50px;
   border-radius: 10px;
+  max-height: 482px;
+    overflow: auto;
 }
 
 .todo-list h1 {
@@ -64,6 +67,9 @@ li{
   display: flex;
   align-items: center;
   margin-top: 20px;
+  position: sticky;
+  bottom: -11px;
+  backdrop-filter: blur(10px);
 }
 
 .add-item input[type="text"] {

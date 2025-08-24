@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,22 +7,46 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
 <body>
-    <div class="todo-list">
-        <form >
-        <div id="header" >
-        <h1>Todo List</h1>
-        <div id="clear" onclick="clearcompleted()">Clear All Complete Task </div>
+    <div class="container">
+        <div class="todo-app">
+            <header class="app-header">
+                <div class="header-content">
+                    <h1><i class="fas fa-check-circle"></i> Task Manager</h1>
+                    <p class="subtitle">Organize your day, one task at a time</p>
+                </div>
+                <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+                    <i class="fas fa-sun" id="lightIcon"></i>
+                    <i class="fas fa-moon" id="darkIcon"></i>
+                </button>
+            </header>
+            
+            <div class="stats-bar">
+                <span class="task-count" id="taskCount">0 tasks</span>
+                <button class="clear-btn" onclick="clearcompleted()">
+                    <i class="fas fa-trash-alt"></i>
+                    Clear Completed
+                </button>
+            </div>
+            
+            <div class="task-container">
+                <ul id="taskList" class="task-list"></ul>
+            </div>
+            
+            <form class="add-task-form">
+                <div class="input-group">
+                    <input type="text" id="taskInput" placeholder="What needs to be done?" maxlength="100">
+                    <button type="submit" id="addTaskBtn">
+                        <i class="fas fa-plus"></i>
+                        <span class="btn-text">Add Task</span>
+                    </button>
+                </div>
+            </form>
         </div>
-        <ul id="taskList"></ul>
-        <div class="add-item">
-          <input type="text" id="taskInput" placeholder="Add a new item">
-          <button id="addTaskBtn">Add Item</button>
-        </div>
-    </form>
-      </div>
+    </div>
     <script src="script.js"></script>
 </body>
 </html>
